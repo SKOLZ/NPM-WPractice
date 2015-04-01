@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+	head
+		link(href='css/app.min.css', rel='stylesheet')
+		link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css', rel='stylesheet')
+		link(href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', rel='stylesheet')
+	body
+		script(src='js/libs.min.js')
+		script(src='js/app.min.js')
+		.container
+			.title Busqueda
+			p El buscador te permitirá encontrar a todos tus amigos, eventos y lugares que frecuentás para seguirlos y estar al tanto de las novedades de salidas. Enterate acerca de a qué fiestas podes asistir y quiénes de tus conocidos encontrarás en ellas.
+			#carousel-example-generic.carousel.slide(data-ride='carousel')
+				ol.carousel-indicators
+					li.active(data-target='#carousel-example-generic', data-slide-to='0')   
+					li(data-target='#carousel-example-generic', data-slide-to='1')    
+					li(data-target='#carousel-example-generic', data-slide-to='2')
+				.carousel-inner(role='listbox')
+					.item.active
+						img(src='images/iphone-busqueda1.png', alt='Busqueda 1')     
+						.carousel-caption
+					.item
+						img(src='images/iphone-busqueda2.png', alt='Busqueda 2') 
+						.carousel-caption
+						img(src='images/iphone-busqueda3.png', alt='Busqueda 3') 
+						.carousel-caption
+				a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+					span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+					span.sr-only Previous
+				a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+					span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+					span.sr-only Next

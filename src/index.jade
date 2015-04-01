@@ -1,8 +1,32 @@
 doctype html
 html(lang='en')
-  head
-    link(href='css/app.min.css', rel='stylesheet')
-  body
-    | holis2
-    script(src='js/libs.min.js')
-    script(src='js/app.min.js')
+	head
+		link(href='css/app.min.css', rel='stylesheet')
+		link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css', rel='stylesheet')
+		link(href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', rel='stylesheet')
+	body
+		script(src='js/libs.min.js')
+		script(src='js/app.min.js')
+		nav.navbar
+			.navbar-container
+				a(href='')
+					img.logo(alt='Night owl Title', src='images/logo-navbar.png')
+				ol.navbar-right
+					li 
+						a(href='') HOME
+					li
+						a(href='') FEATURES
+					li
+						a(href='') APP
+					li
+						a(href='') CONTACT
+					li
+						a.special(href='') DASHBOARD
+		.main-container
+			video(autoplay='autoplay', loop='true', width='100%')
+			img(alt='phones', src='images/phones.png')
+			img(alt='logo-home-video', src='images/logo-home-video.png')
+			h1 La app que te conecta con tu noche
+			.store
+				img(alt='logo-home-video', src='images/google-play.png')
+				img(alt='logo-home-video', src='images/app-store.png')
