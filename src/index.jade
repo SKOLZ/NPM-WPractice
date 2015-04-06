@@ -8,7 +8,7 @@ html(lang='en')
 		link(href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700",  rel='stylesheet', type="text/css")
 		link(href="https://fonts.googleapis.com/css?family=Roboto:400,100italic,700,300,400italic",  rel='stylesheet', type="text/css")
 	body
-		// ------------------- INDEX ------------------ //
+		// -------------------------------------------- INDEX -------------------------------------------- //
 		nav.navbar.navbar-fixed-top(role='navigation')
 			.navbar-header
 				a.brand(href='#')
@@ -46,7 +46,7 @@ html(lang='en')
 							img(alt='logo-google-play', src='images/google-play.png')
 						a(href='#') 
 							img(alt='logo-app-store', src='images/app-store.png')
-		// ------------------- FEATURES ------------------ //
+		// -------------------------------------------- FEATURES -------------------------------------------- //
 		.features-container
 			.title 
 				| Features
@@ -78,7 +78,18 @@ html(lang='en')
 						| Social
 					.feature-text 
 						| Seguí a tus amigos para conocer qué tipo de salidas les gustan y dónde los vas a poder encontrar.
-		// ------------------- TRIVIA ------------------ //
+		// -------------------------------------------- APP -------------------------------------------- //
+		.app-container
+			.elements-container
+				.video
+					iframe(src='https://player.vimeo.com/video/118446754', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+				.text-container
+					h1 
+						| ¿cómo funciona?
+					.line
+					.text
+						| Para comenzar deberás responder algunas preguntas para que la aplicación conozca qué lugares, música y tragos te gustan. Así, Night Owl podrá sugerirte boliches, bares y fiestas afines a vos.
+		// -------------------------------------------- TRIVIA -------------------------------------------- //
 		.trivia-container
 			.trivia-title 
 				| Resultado de la trivia
