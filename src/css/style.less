@@ -56,7 +56,7 @@ h1, h2, p, input, a, div {
 }
 
 .main-container {
-	position: relative;	
+	position: relative;
 	background-image: url("../images/landing-main.png");
 	height: calc(~"100% - 70px");
 	margin-top: 70px;
@@ -79,7 +79,7 @@ h1, h2, p, input, a, div {
 
 .store a img {
 	height: 66px;
-	padding: 0px 5px; 
+	padding: 0px 5px;
 }
 
 .left-container {
@@ -96,7 +96,7 @@ h1, h2, p, input, a, div {
 .main-text {
 	font-size: 40px;
 	font-weight: 700;
-	color: white;
+	color: @white;
 }
 
 /* ---- FEATURES ----- */
@@ -165,7 +165,7 @@ h1, h2, p, input, a, div {
 .features img {
 	height: 80px;
 	width: 80px;
-	margin-bottom: 10px; 
+	margin-bottom: 10px;
 }
 
 /* ---- APP ----- */
@@ -220,6 +220,93 @@ h1, h2, p, input, a, div {
 	}
 }
 
+/* ---- TRIVIA ----- */
+
+/* SACAR FONDO DSP */
+.trivia-container {
+	background-color: #000;
+	position: relative;
+	height: 550px;
+}
+
+.trivia-title {
+	font-size: 35px;
+	font-weight: 700;
+	color: @white;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Roboto Slab';
+}
+
+.trivia-line {
+	height: 3px;
+	max-width: 250px;
+	background-color: @white;
+	margin-bottom: 20px;
+}
+
+.trivia-elements {
+	width: 100%;
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 50%;
+ 	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.trivia-right {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.trivia-left {
+	margin-right: 80px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.trivia-subtitle {
+	max-width: 350px;
+	font-size: 20px;
+ 	line-height: 28px;
+ 	font-weight: 300;
+	color: @white;
+	text-align: left;
+}
+
+.trivia-fb-title {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: @white;
+	margin-bottom: 5px;
+}
+
+
+.trivia-fb-text {
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 20px;
+	color: @white;
+	max-width: 250px;
+}
+
+.facebook {
+	display: block;
+	margin-top: 60px;
+  text-align: left;
+}
+
+.facebook-text {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 30px;
+}
+
+
+
+/* ---- MEDIA ----- */
 
 @media (max-width:768px) {
 
@@ -231,8 +318,33 @@ h1, h2, p, input, a, div {
 		display: none;
 	}
 
-	.right-container > img {
+	.right-container > img, .trivia-right {
 		display: none;
+	}
+
+	.trivia-title {
+		max-width: 430px;
+	}
+
+	.trivia-line {
+		margin: 0 auto;
+	}
+
+	.trivia-subtitle {
+		text-align: center;
+  	margin: 20px auto;
+	}
+
+	.facebook {
+		margin-top: 20px;
+	}
+
+	.facebook-text {
+	  margin-left: 80px;
+	}
+
+	.trivia-left {
+		margin: 10px auto;
 	}
 
 	.main-text {
