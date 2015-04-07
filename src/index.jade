@@ -12,21 +12,21 @@ html(lang='en')
 		nav.navbar.navbar-fixed-top(role='navigation')
 			.navbar-header
 				a.brand(href='#')
-					img(src='images/logo-navbar.png', alt='Night owl Title')   
+					img(src='images/logo-navbar.png', alt='Night owl Title')
 				button.navbar-toggle(data-toggle='collapse', data-target='.navbar-collapse', type='button')
-					span.icon-bar       
+					span.icon-bar
 					span.icon-bar
 					span.icon-bar
 			.collapse.navbar-collapse
 				ul.nav.navbar-nav.navbar-right
 					li.active
-						a(href='#') 
+						a(href='#')
 							| HOME
 					li
-						a(href='#') 
+						a(href='#')
 							| FEATURES
 					li
-						a(href='#') 
+						a(href='#')
 							| APP
 					li
 						a.special(href='#')
@@ -37,24 +37,24 @@ html(lang='en')
 					img(alt='phones', src='images/phones.png', class='phone')
 				.right-container
 					img(alt='logo-home-video', src='images/logo-home-video.png', class='logo-home-video')
-					h1.main-text 
+					h1.main-text
 						| La app que te conecta
 						br
 						| con tu noche
 					.store
-						a(href='#') 
+						a(href='#')
 							img(alt='logo-google-play', src='images/google-play.png')
-						a(href='#') 
+						a(href='#')
 							img(alt='logo-app-store', src='images/app-store.png')
 		// -------------------------------------------- FEATURES -------------------------------------------- //
 		.features-container
-			.title 
+			.title
 				| Features
 			.line
-			.subtitle 
+			.subtitle
 				| NightOwl es el compañero que necesitás para organizar tus salidas.
 			.features
-				.affinity 
+				.affinity
 					img(alt='Afinidad', src='images/i-afinidad.png')
 					.feature-title
 						| Afinidad
@@ -62,21 +62,21 @@ html(lang='en')
 						| Conociendo tus gustos, NightOwl te sugiere lugares acorde a tus intereses.
 				.price
 					img(alt='Precio', src='images/i-precio.png')
-					.feature-title 
+					.feature-title
 						| Precio
 					.feature-text
 							| En el Perfil de cada centro podrás ver el rango de precio de la entrada.
 				.newsfeed
 					img(alt='newsfeed', src='images/i-newsfeed.png')
-					.feature-title 
+					.feature-title
 						| Newsfeed
-					.feature-text 
+					.feature-text
 						| NightOwl te avisará las novedades de los bares y boliches que más te gustan.
 				.social
 					img(alt='Social', src='images/i-social.png')
-					.feature-title 
+					.feature-title
 						| Social
-					.feature-text 
+					.feature-text
 						| Seguí a tus amigos para conocer qué tipo de salidas les gustan y dónde los vas a poder encontrar.
 		// -------------------------------------------- APP -------------------------------------------- //
 		.app-container
@@ -84,50 +84,55 @@ html(lang='en')
 				.video
 					iframe(src='https://player.vimeo.com/video/118446754', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
 				.text-container
-					h1 
+					h1
 						| ¿cómo funciona?
 					.line
 					.text
 						| Para comenzar deberás responder algunas preguntas para que la aplicación conozca qué lugares, música y tragos te gustan. Así, Night Owl podrá sugerirte boliches, bares y fiestas afines a vos.
 		// -------------------------------------------- TRIVIA -------------------------------------------- //
 		.trivia-container
-			.trivia-title 
-				| Resultado de la trivia
-			.trivia-line
-			.trivia-subtitle 
-				| Una vez con el perfil completo, la app te sugiere lugares afines a tus intereses.
-			img(src='images/facebook-share.png', alt='Busqueda 3') 
-			.trivia-fb-title 
-				| Facebook Share
-			.trivia-fb-text 
-				| Compartí tus gustos fuera de NightOwl para que se enteren quienes todavía no tienen la app.
-			img(src='images/100afinidad.png', alt='Busqueda 3') 
+			.trivia-elements
+				.trivia-left
+					.trivia-title
+						| Resultado de la trivia
+					.trivia-line
+					.trivia-subtitle
+						| Una vez con el perfil completo, la app te sugiere lugares afines a tus intereses.
+					.facebook
+						img(src='images/facebook-share.png', alt='Busqueda 3')
+						.facebook-text
+							.trivia-fb-title
+								| Facebook Share
+							.trivia-fb-text
+								| Compartí tus gustos fuera de NightOwl para que se enteren quienes todavía no tienen la app.
+				.trivia-right
+					img(src='images/100afinidad.png', alt='Busqueda 3')
 		.search-container
-			.title 
+			.title
 				| Busqueda
-			p 
+			p
 				| El buscador te permitirá encontrar a todos tus amigos, eventos y lugares que frecuentás para seguirlos y estar al tanto de las novedades de salidas. Enterate acerca de a qué fiestas podes asistir y quiénes de tus conocidos encontrarás en ellas.
 			#carousel-example-generic.carousel.slide(data-ride='carousel')
 				ol.carousel-indicators
-					li.active(data-target='#carousel-example-generic', data-slide-to='0')   
-					li(data-target='#carousel-example-generic', data-slide-to='1')    
+					li.active(data-target='#carousel-example-generic', data-slide-to='0')
+					li(data-target='#carousel-example-generic', data-slide-to='1')
 					li(data-target='#carousel-example-generic', data-slide-to='2')
 				.carousel-inner(role='listbox')
 					.item.active
-						img(src='images/iphone-busqueda1.png', alt='Busqueda 1')     
+						img(src='images/iphone-busqueda1.png', alt='Busqueda 1')
 						.carousel-caption
 					.item
-						img(src='images/iphone-busqueda2.png', alt='Busqueda 2') 
+						img(src='images/iphone-busqueda2.png', alt='Busqueda 2')
 						.carousel-caption
-						img(src='images/iphone-busqueda3.png', alt='Busqueda 3') 
+						img(src='images/iphone-busqueda3.png', alt='Busqueda 3')
 						.carousel-caption
 				a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
 					span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-					span.sr-only 
+					span.sr-only
 						| Previous
 				a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
 					span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-					span.sr-only 
+					span.sr-only
 						| Next
 			script(src='js/libs.min.js')
 			script(src='js/app.min.js')
