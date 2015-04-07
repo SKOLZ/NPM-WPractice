@@ -117,12 +117,12 @@ html(lang='en')
 					.search-text
 						| El buscador te permitirá encontrar a todos tus amigos, eventos y lugares que frecuentás para seguirlos y estar al tanto de las novedades de salidas. Enterate acerca de a qué fiestas podes asistir y quiénes de tus conocidos encontrarás en ellas.
 				.carousel
-					#carousel-example-generic.carousel.slide(data-ride='carousel')
+					#search-carousel.carousel.slide(data-ride='carousel')
 						// Indicators
 						ol.carousel-indicators
-							li.active(data-target='#carousel-example-generic', data-slide-to='0')
-							li(data-target='#carousel-example-generic', data-slide-to='1')
-							li(data-target='#carousel-example-generic', data-slide-to='2')
+							li.active(data-target='#search-carousel', data-slide-to='0')
+							li(data-target='#search-carousel', data-slide-to='1')
+							li(data-target='#search-carousel', data-slide-to='2')
 						// Wrapper for slides
 						.carousel-inner(role='listbox')
 							.item.active
@@ -135,10 +135,10 @@ html(lang='en')
 								img(src='images/iphone-busqueda3.png', alt='Busqueda 3')
 								.carousel-caption
 						// Controls
-						a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+						a.left.carousel-control(href='#search-carousel', role='button', data-slide='prev')
 							span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
 							span.sr-only Previous
-						a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+						a.right.carousel-control(href='#search-carousel', role='button', data-slide='next')
 							span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
 							span.sr-only Next
 			script(src='js/libs.min.js')
