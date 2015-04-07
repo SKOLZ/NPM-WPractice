@@ -222,7 +222,6 @@ h1, h2, p, input, a, div {
 
 /* ---- TRIVIA ----- */
 
-/* SACAR FONDO DSP */
 .trivia-container {
 	background-color: #000;
 	position: relative;
@@ -304,7 +303,88 @@ h1, h2, p, input, a, div {
 	margin-left: 30px;
 }
 
+/* ---- SEARCH----- */
 
+.search-container {
+	background-color: @blue;
+	position: relative;
+	height: 600px;
+}
+
+.search-elements {
+	width: 100%;
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.search-wrapper {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.search-title {
+	font-family: 'Roboto Slab';
+	text-align: right;
+	display: block;
+	font-size: 35px;
+	font-weight: 700;
+	color: @white;
+	text-transform: uppercase;
+}
+
+.search-line {
+	margin-left: 100px;
+	display: block;
+	height: 3px;
+	max-width: 250px;
+	background-color: @white;
+	margin-bottom: 20px;
+}
+
+.search-text {
+	text-align: right;
+	display: block;
+	margin-top: 80px;
+	max-width: 350px;
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 300;
+	color: white;
+}
+
+.carousel {
+	max-width: 500px;
+	width: 100%;
+	padding: 0 50px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.carousel-indicators {
+	bottom: -30px;
+	margin-left: 0;
+	left: 0;
+	width: 100%;
+	position: absolute;
+}
+
+.carousel-control.left, .carousel-control.right {
+	background: none;
+}
+
+.carousel-inner > .item > img {
+	max-width: 426px;
+	max-height: 850px;
+	margin: 0 auto;
+	height: 400px;
+}
 
 /* ---- MEDIA ----- */
 
@@ -345,6 +425,28 @@ h1, h2, p, input, a, div {
 
 	.trivia-left {
 		margin: 10px auto;
+	}
+
+	.search-container {
+		height: 800px;
+	}
+
+	.search-wrapper {
+		display: block;
+	}
+
+	.search-title, .search-line, .search-text {
+		text-align: center;
+		margin: 10px auto;
+	}
+
+	.search-text {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	.carousel {
+		display: block;
 	}
 
 	.main-text {
