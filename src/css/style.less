@@ -268,8 +268,8 @@ h1, h2, p, input, a, div {
 .trivia-subtitle {
 	max-width: 350px;
 	font-size: 20px;
- 	line-height: 28px;
- 	font-weight: 300;
+	line-height: 28px;
+	font-weight: 300;
 	color: @white;
 	text-align: left;
 }
@@ -386,6 +386,78 @@ h1, h2, p, input, a, div {
 	height: 400px;
 }
 
+/* ---- FOOTER ----- */
+
+footer {
+	height: 200px;
+	position: relative;
+}
+
+.footer-container {
+	height: 110px;
+	width: 980px;
+	position: absolute;
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.footer-left {
+	float: left;
+	text-align: left;
+	display: inline-block;
+	a img {
+		height: 30px;
+		margin: 10px 4px;
+	}
+	p {
+		font-family: 'Roboto Slab';
+		font-weight: 100;
+		font-style: italic;
+		font-size: 12px;
+		color: @grey;
+		padding: 0px;
+		margin: 8px 5px;
+	}
+}
+
+.footer-left > img {
+	width: 225px;
+	margin-top: 20px;
+}
+
+.footer-right {
+	display: inline-block;
+	float: right;
+	text-align: right;
+	img {
+		height: 40px;
+		margin: 10px 15px;
+	}
+	a {
+		font-style: italic;
+		font-weight: 100;
+		font-size: 14px;
+		text-decoration: none;
+		color: @grey;
+		display: block;
+	}
+}
+
+.copyright {
+	padding: 0;
+	text-align: right;
+	font-weight: 400;
+	font-size: 9px;
+	text-decoration: none;
+	color: @grey-dark;
+	letter-spacing: 1px;
+	margin-top: 10px;
+}
+
 /* ---- MEDIA ----- */
 
 @media (max-width:768px) {
@@ -487,5 +559,22 @@ h1, h2, p, input, a, div {
 			h1 {
 		  		text-align: center;
 		  }
+  	}
+
+		.footer-left, .footer-right {
+			display: block;
+			text-align: center;
+			margin: 0 auto;
+			width: 100%;
+			margin: 30px 0;
+		}
+
+  	.footer-container {
+  		width: 100%;
+  		text-align: center;
+  	}
+
+  	.copyright {
+  		text-align: center;
   	}
 }
