@@ -7,11 +7,12 @@ html(lang='en')
 		link(href='css/app.min.css', rel='stylesheet')
 		link(href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700",  rel='stylesheet', type="text/css")
 		link(href="https://fonts.googleapis.com/css?family=Roboto:400,100italic,700,300,400italic",  rel='stylesheet', type="text/css")
+		meta(name='viewport', content='width=device-width, initial-scale=1')
 	body
 		// -------------------------------------------- INDEX -------------------------------------------- //
 		nav.navbar.navbar-fixed-top(role='navigation')
 			.navbar-header
-				a.brand(href='#')
+				a.brand(href='#index-section')
 					img(src='images/logo-navbar.png', alt='Night owl Title')
 				button.navbar-toggle(data-toggle='collapse', data-target='.navbar-collapse', type='button')
 					span.icon-bar
@@ -19,19 +20,19 @@ html(lang='en')
 					span.icon-bar
 			.collapse.navbar-collapse
 				ul.nav.navbar-nav.navbar-right
-					li.active
-						a(href='#')
+					li
+						a.active(href="#index-section")
 							| HOME
 					li
-						a(href='#')
+						a(href="#features-section")
 							| FEATURES
 					li
-						a(href='#')
+						a(href='#app-section')
 							| APP
 					li
 						a.special(href='#')
 							| DASHBOARD
-		.main-container
+		#index-section.main-container
 			.elements
 				.left-container
 					img(alt='phones', src='images/phones.png', class='phone')
@@ -47,7 +48,7 @@ html(lang='en')
 						a(href='#')
 							img(alt='logo-app-store', src='images/app-store.png')
 		// -------------------------------------------- FEATURES -------------------------------------------- //
-		.features-container
+		#features-section.features-container
 			.title
 				| Features
 			.line
@@ -78,8 +79,10 @@ html(lang='en')
 						| Social
 					.feature-text
 						| Seguí a tus amigos para conocer qué tipo de salidas les gustan y dónde los vas a poder encontrar.
+		// -------------------------------------------- PARALLAX 1 ------------------------------------- //
+		#parallax1(data-stellar-background-ratio='0.2', data-stellar-vertical-offset='1000')
 		// -------------------------------------------- APP -------------------------------------------- //
-		.app-container
+		#app-section.app-container
 			.elements-container
 				.video
 					iframe(src='https://player.vimeo.com/video/118446754', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
@@ -90,23 +93,24 @@ html(lang='en')
 					.text
 						| Para comenzar deberás responder algunas preguntas para que la aplicación conozca qué lugares, música y tragos te gustan. Así, Night Owl podrá sugerirte boliches, bares y fiestas afines a vos.
 		// -------------------------------------------- TRIVIA -------------------------------------------- //
-		.trivia-container
-			.trivia-elements
-				.trivia-left
-					.trivia-title
-						| Resultado de la trivia
-					.trivia-line
-					.trivia-subtitle
-						| Una vez con el perfil completo, la app te sugiere lugares afines a tus intereses.
-					.facebook
-						img(src='images/facebook-share.png', alt='Busqueda 3')
-						.facebook-text
-							.trivia-fb-title
-								| Facebook Share
-							.trivia-fb-text
-								| Compartí tus gustos fuera de NightOwl para que se enteren quienes todavía no tienen la app.
-				.trivia-right
-					img(src='images/100afinidad.png', alt='Busqueda 3')
+		#parallax2(data-stellar-background-ratio='0.2')
+			.trivia-container
+				.trivia-elements
+					.trivia-left
+						.trivia-title
+							| Resultado de la trivia
+						.trivia-line
+						.trivia-subtitle
+							| Una vez con el perfil completo, la app te sugiere lugares afines a tus intereses.
+						.facebook
+							img(src='images/facebook-share.png', alt='Busqueda 3')
+							.facebook-text
+								.trivia-fb-title
+									| Facebook Share
+								.trivia-fb-text
+									| Compartí tus gustos fuera de NightOwl para que se enteren quienes todavía no tienen la app.
+					.trivia-right
+						img(src='images/100afinidad.png', alt='Busqueda 3')
 		// -------------------------------------------- SERCH -------------------------------------------- //
 		.search-container
 			.search-elements
@@ -141,6 +145,8 @@ html(lang='en')
 						a.right.carousel-control(href='#search-carousel', role='button', data-slide='next')
 							span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
 							span.sr-only Next
+		// ---------------------------------------------- PARALLAX 3 -------------------------------------- //
+		#parallax3(data-stellar-background-ratio='0.2')
 		// -------------------------------------------- FOOTER -------------------------------------------- //
 		footer
 			.footer-container

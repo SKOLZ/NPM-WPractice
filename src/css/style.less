@@ -2,18 +2,25 @@
 
 html, body {
 	height: 100%;
-	overflow-x: hidden;
 }
 
 h1, h2, p, input, a, div {
 	font-family: 'Roboto';
 }
 
+.main-container,
+.search-container,
+.app-container,
+.trivia-container,
+footer {
+	padding: 80px;
+}
+
 /* ---- INDEX ----- */
 
 .navbar {
 	background-color: @white;
-	padding: 0px 50px;
+	padding: 0px 10px;
 }
 
 .navbar-header {
@@ -55,8 +62,16 @@ h1, h2, p, input, a, div {
 	margin-top: 15px;
 }
 
+.nav.navbar-nav.navbar-right li a.active {
+	color: @blue;
+}
+
+/* INDEX */
+
 .main-container {
-	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	background-image: url("../images/landing-main.png");
 	height: calc(~"100% - 70px");
 	margin-top: 70px;
@@ -70,11 +85,6 @@ h1, h2, p, input, a, div {
 
 .elements {
 	text-align: center;
-	min-width: 760px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
 .store a img {
@@ -168,12 +178,21 @@ h1, h2, p, input, a, div {
 	margin-bottom: 10px;
 }
 
+/* PARALLAX 1 */
+
+#parallax1 {
+	height: 590px;
+	background-attachment: fixed;
+	background-color: black;
+	background-image: url(/images/parallax1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 /* ---- APP ----- */
 
 .app-container {
-	position: relative;
 	background-color: @blue;
-	height: 500px;
 }
 
 .video {
@@ -190,10 +209,6 @@ h1, h2, p, input, a, div {
 	width: 100%;
 	text-align: center;
 	display: block;
-	position: absolute;
-	top: 50%;
- 	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
 .text-container {
@@ -220,13 +235,16 @@ h1, h2, p, input, a, div {
 	}
 }
 
-/* ---- TRIVIA ----- */
+/* PARALLAX 2 */
 
-.trivia-container {
-	background-color: #000;
-	position: relative;
-	height: 550px;
+#parallax2 {
+	background-image: url(/images/parallax2.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	text-align: center;
 }
+
+/* ---- TRIVIA ----- */
 
 .trivia-title {
 	font-size: 35px;
@@ -248,10 +266,6 @@ h1, h2, p, input, a, div {
 	width: 100%;
 	text-align: center;
 	display: block;
-	position: absolute;
-	top: 50%;
- 	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
 .trivia-right {
@@ -307,18 +321,12 @@ h1, h2, p, input, a, div {
 
 .search-container {
 	background-color: @blue;
-	position: relative;
-	height: 600px;
 }
 
 .search-elements {
 	width: 100%;
 	text-align: center;
 	display: block;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
 .search-wrapper {
@@ -359,7 +367,6 @@ h1, h2, p, input, a, div {
 .carousel {
 	max-width: 500px;
 	width: 100%;
-	padding: 0 50px;
 	display: inline-block;
 	vertical-align: middle;
 	position: relative;
@@ -386,23 +393,22 @@ h1, h2, p, input, a, div {
 	height: 400px;
 }
 
-/* ---- FOOTER ----- */
+/* PARALLAX 3 */
 
-footer {
-	height: 200px;
-	position: relative;
+#parallax3 {
+	background-image: url(/images/parallax3.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	text-align: center;
+	min-height: 400px;
 }
+
+/* ---- FOOTER ----- */
 
 .footer-container {
 	height: 110px;
-	width: 980px;
-	position: absolute;
 	text-align: center;
 	display: block;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
 .footer-left {
@@ -460,7 +466,7 @@ footer {
 
 /* ---- MEDIA ----- */
 
-@media (max-width:768px) {
+@media screen and (max-width:768px) {
 
 	.navbar .nav > li > a {
 		padding: 10px 15px;
@@ -489,18 +495,18 @@ footer {
 
 	.facebook {
 		margin-top: 20px;
+		text-align: center;
+		img {
+			display: none;
+		}
 	}
 
 	.facebook-text {
-	  margin-left: 80px;
+	  margin-left: 0px;
 	}
 
 	.trivia-left {
 		margin: 10px auto;
-	}
-
-	.search-container {
-		height: 800px;
 	}
 
 	.search-wrapper {
